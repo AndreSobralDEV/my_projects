@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Coletar Dados</title>
+  <script>
+    function coletarDados() {
+      // Coletando dados
+      const nome = prompt("Qual é o seu nome?");
+      const idade = prompt("Quantos anos você tem?");
+      const cidade = prompt("Em qual cidade você mora?");
+      const profissao = prompt("Qual é a sua profissão?");
+      
+      // Criando a mensagem final
+      const mensagem = `Olá, ${nome}! 👋\n\n` +
+                       `Você tem ${idade} anos, mora em ${cidade} e trabalha como ${profissao}.\n` +
+                       `Foi um prazer conhecer um pouco mais sobre você! 😊`;
+
+      // Exibindo a mensagem final
+      alert(mensagem);
+    }
+  </script>
+</head>
+<body onload="coletarDados()">
+</body>
+</html>

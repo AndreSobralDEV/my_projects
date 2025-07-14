@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Aniversário, Meu Amor! 💖</title>
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: #fff;
+  }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.4em;
+      max-width: 600px;
+      margin: auto;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    button {
+      margin-top: 40px;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #fff;
+      color: #c40e26;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    button:hover {
+      background-color: #ffdde1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .heart {
+      position: fixed;
+      color: red;
+      font-size: 24px;
+      animation: floatUp 4s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-800px) scale(0.5); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Feliz Aniversário, Amor! 🎂❤️</h1>
+  <p>
+    Hoje é o seu dia, e eu queria te surpreender com algo diferente.  
+    Você é a luz da minha vida, minha melhor amiga, meu porto seguro e meu amor verdadeiro.  
+    Eu te amo mais do que qualquer código poderia expressar. 💻❤️  
+    Que esse novo ano traga ainda mais sorrisos, sonhos e momentos ao nosso lado!
+  </p>
+
+  <button onclick="espalharAmor()">Clique aqui para uma surpresa 💌</button>
+
+  <iframe width="0" height="0" 
+  src="https://www.youtube.com/embed/szts-5Zs5_8?autoplay=1&loop=1&playlist=szts-5Zs5_8" 
+  frameborder="0" 
+  allow="autoplay" 
+  allowfullscreen>
+  </iframe>
+
+
+  <script>
+    function espalharAmor() {
+      for (let i = 0; i < 40; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.top = '100vh';
+        heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        heart.innerText = '❤️';
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 4000);
+      }
+
+      alert("Você é o meu presente todos os dias. Te amo muito! 💖");
+    }
+  </script>
+</body>
+</html>
